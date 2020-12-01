@@ -59,8 +59,8 @@ namespace Security_Lab7
             Console.WriteLine("\n\nDecrypted Data : ");
             foreach (var item in data)
             {
-                decryptedMail = CryptoEngine.Decrypt(item.Mail, "sblw-3hn8-sqoy19");
-                decryptedToken = CryptoEngine.Decrypt(item.Token, "sblw-3hn8-sqoy19");
+                decryptedMail = CryptoEngine.Decrypt(item.Mail);
+                decryptedToken = CryptoEngine.Decrypt(item.Token);
 
                 Console.WriteLine($"{item.Name} | {decryptedMail} | {decryptedToken}");
             }
